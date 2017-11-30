@@ -1,5 +1,10 @@
-<h1>hi</h1>
-<div *ngFor="let data of data; let i index " >
- {{data.id}}{{data.firstname}}{{data.lastname}}
- <img src="{{data.image}}" >
-</div>
+<div class="container">
+    <div class="list-group" *ngFor="let user of users">
+     <ul class="list-group">
+     <li class="list-group-item justify-content-between">
+         <img class="card-img-top img-circle" style="max-width: 5%; height: auto;" src={{user.image}}>
+         <strong>{{user.lastname}} {{user.firstname}}</strong>
+         <span class="badge badge-default badge-pill">{{user.id}}</span></li>
+    </ul>
+    </div>
+ </div>

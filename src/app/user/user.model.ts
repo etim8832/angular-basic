@@ -1,4 +1,4 @@
-class User {
+export class User {
     constructor(
         public id: Number,
         public firstname: string,
@@ -8,4 +8,4 @@ class User {
     ) { }
 
 }
-export default User;
+// export default User;
