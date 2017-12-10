@@ -6,10 +6,10 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class UserService {
-    private url = 'http//localhost:3000/';
+    private url = 'http://localhost:3000/users';
     constructor(private http : Http){ }
     getUsers():Observable<user[]>{
-  return this.http.get(this.url + 'users')
+  return this.http.get(this.url)
   .map(res => res.json() as user[])
     }
 }
